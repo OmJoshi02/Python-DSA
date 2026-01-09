@@ -15,6 +15,11 @@ print("size of array : ",len(integer))
 
 print()
 
+
+#copy array
+
+copyArray = array(integer.typecode, (x*2 for x in integer))
+print("This is copyArray : ",copyArray)
 #Normal for loop
 print("Integer array")
 print("typecode : ", integer.typecode)
@@ -61,5 +66,19 @@ for i in integer:
 print("\n")
 #Insert element at last
 integer.append(100)
+for i in integer:
+    print(i, end= ", ")
+    
+print("\n")
+
+
+#pop
+integer.pop()
+for i in integer:
+    print(i, end= ", ")
+    
+
+#Remove
+integer.remove(100)
 for i in integer:
     print(i, end= ", ")
